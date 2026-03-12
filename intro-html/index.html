@@ -2,6 +2,12 @@
 <html>
 <head>
   <title>Mi primera web</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      width: 500px;
+    }
+  </style>
 </head>
 <body>
   <h1>Mi primer heading</h1>
@@ -13,19 +19,19 @@
   <hr>
   <h1>Comentarios y etiquetas de salto de linea y span</h1>
   <!-- Este texto es un comentario y no va a aparecer en el explorador -->
-   <p>Este es un texto más largo y es para mostrar la etiqueta de <span style="color:blue;">span!</span><br>Esta parte del texto esta en un salto de línea</p>
-   <hr>
-   <!-- Hipervínculos -->
-   <h1>Etiqueta de hipervínculo</h1>
-   <a target="_blank" href="//www.google.com/?hl=es_419&zx=1772580797149&no_sw_cr=1">Ir a Google</a>
-   <hr>
-   <!-- Imágenes -->
-   <h1>Etiqueta de imágenes</h1>
-   <img src="./imgs/025.png" alt="Pikachu">
-   <hr>
-   <!-- Formularios -->
-   <h1>Etiqueta form</h1>
-   <form action="./form" method="post">
+  <p>Este es un texto más largo y es para mostrar la etiqueta de <span style="color:blue;">span!</span><br>Esta parte del texto esta en un salto de línea</p>
+  <hr>
+  <!-- Hipervínculos -->
+  <h1>Etiqueta de hipervínculo</h1>
+  <a target="_blank" href="//www.google.com/?hl=es_419&zx=1772580797149&no_sw_cr=1">Ir a Google</a>
+  <hr>
+  <!-- Imágenes -->
+  <h1>Etiqueta de imágenes</h1>
+  <img src="./imgs/025.png" alt="Pikachu">
+  <hr>
+  <!-- Formularios -->
+  <h1>Etiqueta form</h1>
+  <form action="./form" method="post">
     <label for="nombre">Nombre</label>
     <input value="Mario" type="text" name="nombre" id="nombre" placeholder="Nombre">
     <br>
@@ -36,6 +42,75 @@
     <textarea cols="50" rows="10" name="comentario" id="comentario" placeholder="ingrese comentario"></textarea>
     <br>
     <input type="Submit" name="" id="">
-   </form>
+    <!-- Botones
+    La propiedad button deja el botón tal cual
+    La propiedad reset resetea todos los valores del form
+    La propiedad de submit envía los datos del formulario
+
+    Es más personalizable que una etiqueta de input
+    -->
+    <button type="button">Enviar</button>
+    <button type="reset">Enviar</button>
+    <button type="submit">Enviar</button>
+  </form>
+  <hr>
+  <!-- Listas no ordenadas -->
+  <h1>Listas no ordenadas</h1>
+  <ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>Elemento 5</li>
+  </ul>
+  <!-- Listas ordenadas -->
+  <ol>
+    <li value="50">Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>Elemento 5</li>
+    <li>
+      <ol>
+        <li style="list-style-type: lower-alpha;">Sub elemento 1</li>
+        <li style="list-style-type: lower-alpha;">Sub elemento 2</li>
+        <li style="list-style-type: lower-alpha;">Sub elemento 3</li>
+      </ol>
+    </li>
+  </ol>
+  <hr>
+  <!-- Tablas -->
+  <h1>Tablas</h1>
+  <table>
+    <thead>
+      <tr>
+      <th>Precio</th>
+      <th>Producto</th>
+      <th>Cantidad</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>$100</td>
+      <td>Carta Pokemon</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>$50</td>
+      <td>Balón Mundial</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>$10</td>
+      <td>Playera futbol</td>
+      <td>3</td>
+    </tr>
+    </tbody>
+    <tfoot>
+      <td>Total: $160.00</td>
+      <td></td>
+      <td>Total: 6</td>
+    </tfoot>
+  </table>
 </body>
 </html>
